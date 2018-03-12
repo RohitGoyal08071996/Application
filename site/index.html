@@ -2,8 +2,41 @@
 <html>
 <head>
 	<title>Application Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<p>A simple application form</p>
+	<form><label for="address">Address:	</label>
+		<input type="text" name="address" id="address" placeholder="Address" size="30px
+		" maxlength="100">
+		<br>
+		<label for="postalcode">Postal Code:</label>
+		<input type="text" name="postalcode" id="postalcode" placeholder="Post Code" size="30px
+		" maxlength="100">
+		<br>
+		<label for="city">City:	&nsbs</label>
+		<input type="text" name="city" id="city" placeholder="City" size="30px
+		" maxlength="100">
+		<br>
+
+		<p>Choose a shipping method:</p>
+		<select name="shipping" id="shipping">
+			<option value="free">Free Shipping</option>
+			<option value="twoday">Two Day Shipping</option>
+			<option value="oneday">One Day Shipping</option>
+		</select>
+		<p>Choose a payment method"</p>
+		<label><input type="radio" name="payment" value="paypal">Paypal</label>
+		<label><input type="radio" name="payment" value="Credit Card">Credit Card</label>
+		<label><input type="radio" name="payment" value="Debit Card">Debit Card</label>
+		<br>
+
+		<label for="Comments">Comments:</label>
+		<textarea rows="4" cols="50" name="Comments" id="comments"></textarea>
+		<br>
+
+		<label><input type="checkbox" name="emailupdate" checked="checked">For Email Update</label>
+		<label><input type="checkbox" name="phoneupdate">For Phone Update</label><br>
+		<input type="submit" name="submit">
+	</form>
 </body>
 </html>
